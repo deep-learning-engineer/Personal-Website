@@ -1,0 +1,257 @@
+@font-face {
+    font-family: "DaMiOne";
+    src: url(/fonts/DaMiOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Strong";
+    src: url(/fonts/Strong-Regular.ttf);
+}
+
+body {
+    background-color: #25262A;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0;
+    font-family: DaMiOne, sans-serif;
+    color: white;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: DaMiOne, sans-serif;
+    color: white;
+}
+
+p {
+    font-size: 18px;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+
+.contacts {
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 25px;
+    padding: 20px;
+}
+
+.contacts svg {
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 50%;
+    color:#9999;
+}
+
+.contacts svg:hover{
+    fill: #0F6FFF;
+    color: #0F6FFF;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin-left: 30px;
+    color: white;
+}
+
+.description .chapter {
+    margin-bottom: 8px;
+}
+
+.description .chapter span {
+    color: #0F6FFF;
+}
+
+.description .info {
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 18px;
+    font-family: Strong, sans-serif;
+}
+
+.description .info {
+    position: relative;
+}
+
+.description .info::before {
+    margin-left: -15px;
+    content: '';
+    position: absolute;
+    left:0;
+    width: 3px; 
+    height: 100%;
+    background-color: #0F6FFF;
+    box-shadow: 0 0 8px #0F6FFF
+}
+
+button {
+    width: 190px;
+    height: 40px;
+    margin: .4em;
+    padding: .4em .8em;
+    background: none;
+    border: 2px solid;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: Strong, sans-serif;
+    border-color: #0F6FFF;
+    box-shadow: 0 0 4px #0F6FFF;
+    color: white;
+}
+
+button:hover {
+    background-color: #0F6FFF;
+    box-shadow: none;
+    cursor:pointer
+}
+
+.stack {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    background-color: #28292D;
+    color:white;
+}
+
+.stack .information {
+    margin: auto;
+    padding-top: 70px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.stack .chapter span {
+    color: #08FF6B;
+}
+
+.stack .info {
+    font-size: 18px;
+    font-family: Strong, sans-serif;
+}
+
+.stack .stack-elements{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.stack .stack-elements li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 13px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 80px;
+    margin-top: 20px;
+    border-radius: 25px;
+    backdrop-filter: blur(80px);
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.13);
+}
+
+.stack .stack-elements .icon {
+    position: relative;
+    display: inline-block;
+}
+  
+.stack .stack-elements .icon > svg:first-child {
+    filter: blur(3px);
+    overflow: visible;
+    position: absolute;
+    z-index: -1;
+}
+
+.stack .stack-elements .title {
+    font-size: 18px;
+    font-family: DaMiOne, sans-serif;
+}
+
+#python {
+    width: 158px;
+    height: 100px;
+}
+
+#pytroch {
+    width: 158px;
+    height: 100px;
+}
+
+#sklearn {
+    width: 190px;
+    height: 100px; 
+}
+
+#pandas {
+    width: 120px;
+    height: 100px; 
+}
+
+.footer {
+    margin-top: 60px;
+    margin-left: 30px;
+    font-size: 24px;
+    font-family: Strong, sans-serif;
+    color: white;
+}
+
+.footer .footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer-right {
+    align-content: flex-end;
+}
+
+.footer .contact-info {
+    font-size: 30px;
+    color: #9999;
+}
+
+.footer .contact-phone {
+    margin: 0px;
+    color: #FF7A00;
+}
+
+.footer .contact-email{
+    margin: 5px;
+}
+
+.footer .contact-email span{
+    color: #FF7A00;
+}
+
+.footer .message {
+    max-width: 400px;
+    text-align: right;
+}
+
+.footer .footer-bottom {
+    margin-top:40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .rights {
+    font-size: 18px;
+    color: #9999;
+}
+
+.footer .footer-contacts {
+    gap: 10px;
+}
