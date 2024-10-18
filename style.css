@@ -177,6 +177,11 @@ button:hover {
     color:white;
 }
 
+.stack a {
+    text-decoration: none; 
+    color: white;
+}
+
 .stack .information {
     margin: auto;
     padding-top: 70px;
